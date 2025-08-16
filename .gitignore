@@ -13,8 +13,6 @@ dist-ssr
 *.local
 coverage
 
-src/config.js
-src/theme.scss
 
 .env
 .idea/
