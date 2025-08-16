@@ -2,6 +2,7 @@
   "name": "react-personal-resume-builder",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://ametthapa.github.io/personal_resume",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,9 @@
     "preview": "vite preview",
     "profile": "vite --profile --open",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -43,6 +46,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.3.0",
     "jsdom": "^24.0.0",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.71.0",
